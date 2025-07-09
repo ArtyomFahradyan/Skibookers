@@ -1,0 +1,95 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--modal-overlay-bg, rgba(30, 41, 59, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-overlay--close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-content {
+  background: var(--color-card-bg);
+  border-radius: var(--modal-radius, 18px);
+  box-shadow: var(--modal-content-shadow, var(--color-shadow));
+  border: var(--modal-content-border, 1.5px solid var(--color-border));
+  padding: var(--modal-padding, 40px 36px 32px 36px);
+  min-width: var(--modal-min-width, 380px);
+  max-width: 96vw;
+  position: relative;
+  animation: modalIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--font-main);
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+.modal-content--open {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+.modal-content--close {
+  opacity: 0;
+  transform: scale(0.85);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+@keyframes modalIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: var(--color-primary);
+  border: none;
+  font-size: 2.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  border-radius: 999px;
+  width: var(--modal-close-size, 44px);
+  height: var(--modal-close-size, 44px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--modal-close-shadow, 0 1.5px 8px rgba(15, 23, 42, 0.06));
+  transition:
+    background 0.18s,
+    color 0.18s,
+    box-shadow 0.18s;
+  outline: none;
+}
+
+.modal-close:hover {
+  background: var(--color-btn-dark);
+  color: var(--color-white);
+}

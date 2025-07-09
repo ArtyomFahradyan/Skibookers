@@ -1,0 +1,86 @@
+.ai-suggestion-box {
+  background: var(--color-ai-bg);
+  border-radius: var(--ai-suggestion-radius, 12px);
+  padding: var(--ai-suggestion-padding, 14px 18px);
+  margin-bottom: var(--ai-suggestion-margin-bottom, 18px);
+  display: flex;
+  align-items: center;
+  gap: var(--ai-suggestion-gap, 10px);
+  font-weight: 500;
+  color: var(--color-ai);
+  border: 1.5px solid var(--color-border);
+}
+
+.modal-option-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--color-card-bg);
+  color: var(--color-title);
+  border: 1.5px solid var(--color-border);
+  border-radius: 999px;
+  padding: var(--option-btn-padding, 14px 18px);
+  margin: var(--option-btn-margin, 8px 0);
+  font-size: var(--option-btn-font-size, 1.05rem);
+  font-family: var(--font-main);
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    border 0.18s,
+    color 0.18s,
+    box-shadow 0.18s;
+  box-shadow: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.modal-option-btn:hover,
+.modal-option-btn:focus {
+  background: var(--color-btn-dark);
+  color: var(--color-white);
+  border-color: var(--color-btn-dark);
+}
+
+.modal-option-btn.selected {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.modal-option-btn.ai-suggested {
+  background: var(--color-ai-bg);
+  color: var(--color-ai);
+  border: 1.5px solid var(--color-ai);
+  font-weight: 600;
+}
+
+.modal-option-btn:focus {
+  outline: none;
+}
+
+.modal-option-btn:focus-visible {
+  border-color: var(--color-btn);
+  box-shadow: 0 0 0 2px var(--color-btn);
+}
+
+.ai-suggestion-price {
+  color: #4f8cff;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.ai-suggestion-emoji {
+  margin-left: 8px;
+  font-size: 18px;
+  color: var(--color-btn);
+}
+
+.modal-checkbox {
+  margin-right: 8px;
+}
+
+.modal-option-list {
+  list-style: none;
+  padding: 0;
+}

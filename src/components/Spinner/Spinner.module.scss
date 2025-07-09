@@ -1,0 +1,29 @@
+.spinner-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spinner-size, 36px);
+  height: var(--spinner-size, 36px);
+}
+
+.spinner-abs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner-svg {
+  display: block;
+}
+
+.spinner-circle {
+  transform-origin: center;
+  animation: spinner-rotate 1s linear infinite;
+}
+
+@keyframes spinner-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

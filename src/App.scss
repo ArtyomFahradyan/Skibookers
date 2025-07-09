@@ -1,0 +1,91 @@
+:root {
+  --color-bg: #f7f8fa;
+  --color-card-bg: #fff;
+  --color-shadow: 0 4px 32px rgba(15, 23, 42, 0.08);
+  --color-shadow-light: 0 1.5px 8px rgba(15, 23, 42, 0.04);
+  --color-title: #222;
+  --color-subtitle: #555;
+  --color-muted: #888;
+  --color-btn: #4f8cff;
+  --color-ai-bg: #f0f4ff;
+  --color-ai: #4f8cff;
+  --color-success-bg: #e8fbe8;
+  --color-success: #1a7f37;
+  --color-error-bg: #ffb3b3;
+  --color-error: #d32f2f;
+  --color-warning-bg: #ffe6a1;
+  --color-warning: #b26a00;
+  --color-border: #e3e6ea;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --font-main: 'Inter', system-ui, sans-serif;
+  --card-radius: 16px;
+  --card-padding: 28px 28px 20px 28px;
+  --card-margin-bottom: 24px;
+  --card-accent-gradient: linear-gradient(180deg, #4f8cff 0%, #a0c4ff 100%);
+  --card-accent-opacity: 0.8;
+  --button-radius: 8px;
+  --button-padding: 10px 22px;
+  --button-font-size: 0.92rem;
+  --button-margin-left: 12px;
+  --button-shadow: 0 1px 4px rgba(26, 115, 232, 0.08);
+  --modal-overlay-bg: rgba(30, 41, 59, 0.1);
+  --modal-padding: 40px 36px 32px 36px;
+  --modal-min-width: 380px;
+  --modal-close-size: 44px;
+  --modal-close-shadow: 0 1.5px 8px rgba(15, 23, 42, 0.06);
+  --modal-radius: 18px;
+  --modal-content-shadow: var(--color-shadow);
+  --modal-content-border: 1.5px solid var(--color-border);
+
+  --editmodal-radius: 18px;
+  --editmodal-padding: 40px 36px 32px 36px;
+  --editmodal-min-width: 380px;
+
+  --ai-suggestion-radius: 12px;
+  --ai-suggestion-padding: 14px 18px;
+  --ai-suggestion-margin-bottom: 18px;
+  --ai-suggestion-gap: 10px;
+
+  --option-btn-radius: 12px;
+  --option-btn-padding: 14px 18px;
+  --option-btn-margin: 8px 0;
+  --option-btn-font-size: 1.05rem;
+
+  --resort-radius: 18px;
+  --resort-min-height: 460px;
+  --resort-margin-bottom: 32px;
+  --resort-info-radius: 0 0 18px 18px;
+  --resort-info-padding: 32px 40px 24px 40px;
+
+  --trip-total-radius: 12px;
+  --trip-total-padding: 24px 40px;
+  --trip-total-margin-bottom: 32px;
+  --trip-total-title-size: 2rem;
+
+  --recommendation-radius: 12px;
+  --recommendation-padding: 24px 40px;
+  --recommendation-title-size: 1.3rem;
+
+  --package-section-gap: 24px;
+  --package-section-margin-bottom: 40px;
+  --package-section-columns: 4;
+  --color-white: #fff;
+  --color-black: #222;
+  --color-btn-dark: #0a2540;
+  --color-primary: #635bff;
+  --color-danger: #d32f2f;
+  --color-gradient-bg: linear-gradient(120deg, #f7f8fa 60%, #eaf1ff 100%);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: var(--color-bg);
+}
