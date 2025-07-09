@@ -59,7 +59,8 @@ export const recommendation = {
     },
     {
       title: 'Book a Private Ski Lesson',
-      description: 'Improve your skills with a certified instructor for all levels.',
+      description:
+        'Improve your skills with a certified instructor for all levels.',
       icon: '⛷️',
       cta: 'Book Lesson',
       link: '#private-lesson',

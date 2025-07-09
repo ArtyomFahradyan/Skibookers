@@ -40,9 +40,7 @@ const RecommendationSection: React.FC<RecommendationSectionProps> = ({
               <div className={classNames(styles['recommendation-desc'])}>
                 {item.description}
               </div>
-              <Button disabled>
-                {item.cta}
-              </Button>
+              <Button disabled>{item.cta}</Button>
             </div>
           </div>
         ))}

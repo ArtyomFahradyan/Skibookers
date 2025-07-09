@@ -106,10 +106,3 @@ pnpm vitest
 ## 🤝 Contributing
 
 PRs and suggestions welcome! Please lint and format your code before submitting.
-
----
-
-## License
-
-MIT
-# Skibookers
