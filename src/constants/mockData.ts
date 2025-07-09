@@ -31,8 +31,7 @@ export const tripPackage: TripPackage = {
 };
 
 export const recommendation = {
-  reason:
-    'Based on your preferences: Party vibe, Medium budget, Group of friends',
+  reason: 'Based on your preferences',
   items: [
     {
       title: 'Try the Après-Ski Party',
